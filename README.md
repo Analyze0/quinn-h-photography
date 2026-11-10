@@ -1,1 +1,0 @@
-# quinn-h-photography
