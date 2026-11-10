@@ -35,19 +35,28 @@ function updateTitle(e) {
     let desc;
     const descriptions = {
         1: "Turbine Hall Facing North",
-        2: "Boiler Hall",
-        3: "Boiler Control Room",
+        2: "Boilers",
+        3: "Boiler Hall",
         4: "Boiler Control Room",
         5: "Boiler Control Room",
-        6: "Boilers",
+        6: "Boiler Control Room",
         7: "Main Control Room",
-        8: "Graffiti",
-        9: "Main Control Room",
+        8: "Main Control Room",
+        9: "Switch House",
         10: "Set From 12 Monkeys in Switch House",
         11: "Switch House",
-        12: "Set From 12 Monkeys in Switch House",
-        13: "Turbine",
-        14: ""
+        12: "Turbine",
+        13: "Turbine Hall Facing South West",
+        14: "Beneath the Turbine Hall",
+        15: "Beneath the Turbine Hall",
+        16: "Exterior Facing West",
+        17: "Coal Tower and Conveyor",
+        18: "Controls",
+        19: "Beneath the Turbine Hall",
+        20: "Graffiti",
+        21: "Control Panel",
+        22: "Bathroom",
+        23: "Set From 12 Monkeys in Switch House"
     };
 
     desc = descriptions[e] ?? desc;
