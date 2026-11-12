@@ -1,22 +1,26 @@
 let imageDescription;
 
 //randomize loader image:
-var i = Math.floor(Math.random() * 7) + 1;
+var i = Math.floor(Math.random() * 9) + 1;
 document.getElementById("img").src = '/images/home/' + i + '.jpg';
 
 if (i==1){
-    imageDescription = "Richmond Generating Station Turbine Hall";
+    imageDescription = "Abandoned Power Plant Turbine Hall";
 } else if (i==2){
-    imageDescription = "Richmond Generating Station Control Room";
+    imageDescription = "Abandoned Power Plant Control Room";
 } else if (i==3){
-    imageDescription = "Richmond Generating Station";
+    imageDescription = "Abandoned Power Plant Switch House";
 } else if (i==4){
-    imageDescription = "Set from 12 Monkeys in Richmond Generating Station";
+    imageDescription = "Psychotherapy - Abandoned Power Plant";
 } else if (i==5){
-    imageDescription = "Richmond Generating Station";
+    imageDescription = "Abandoned Power Plant";
 } else if (i==6){
-    imageDescription = "Richmond Generating Station Coal Tower";
+    imageDescription = "Abandoned Power Plant Coal Tower";
 } else if (i==7){
     imageDescription = "French Chateau";
+} else if (i==8){
+    imageDescription = "Gas Blowing Engine House";
+} else if (i==9){
+    imageDescription = "Abandoned Train Line in Paris";
 }
 document.getElementById("image-description").innerHTML = imageDescription;

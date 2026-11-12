@@ -53,16 +53,17 @@ a {
 }
 
 div.gallery {
+  user-select: none;
   color: white;
   background: #121212;
-  border: 1px solid #ccc;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  background: #232323;
 }
 
 div.gallery img {
+  cursor: pointer;
   width: 100%;
   height: auto;
 }
@@ -100,8 +101,6 @@ div.desc {
   display: table;
   clear: both;
 }
-.name {
-    font-size: 30px;
-    font-weight: bold;
-    transform: translateY(200px);
+.sidebar a:hover {
+    background: #222;
 }

@@ -53,46 +53,6 @@ img {
     top: 50%;
     transform: translateY(-50%);
 }
-.right-button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    background: #121212;
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    z-index: 10;
-    color: white;
-    opacity: 0.8;
-    cursor: pointer;
-    font-size: 50px;
-    font-weight: bold;
-}
-.right-button span {
-    margin-left: 20px;
-    transform: translateY(10px);
-}
-.left-button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 270px;
-    background: #121212;
-    border-radius: 100%;
-    width: 70px;
-    height: 70px;
-    z-index: 10;
-    color: white;
-    opacity: 0.8;
-    cursor: pointer;
-    font-size: 50px;
-    font-weight: bold;
-}
-.left-button span {
-    margin-left: 20px;
-    transform: translateY(10px);
-}
 img{
     pointer-events: none;
 }
@@ -119,4 +79,7 @@ img{
     padding: 20px;
     font-size: 18px;
     font-style: italic;
+}
+.sidebar a:hover {
+    background: #222;
 }

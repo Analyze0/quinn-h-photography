@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    user-select: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: rgb(8, 8, 8);
+    color: white;
+}
+
+a {
+    font-family: "Montserrat", sans-serif;
+}
+
+.sidebar {
+    font-size: 23px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #121212;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.sidebar-padding {
+    width: 250px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #222;
+}
+
+main {
+    margin-left: 250px;
+    padding: 24px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+}
+
+#gallery img {
+    display: block;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    cursor: zoom-in;
+    opacity: 0;
+    transition: opacity 250ms ease;
+}
+
+#gallery img.loaded {
+    opacity: 1;
+}
+
+#loader {
+    min-height: 48px;
+    padding: 20px;
+    color: #ccc;
+    text-align: center;
+}
+
+#loader.load-error {
+    color: #f66;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 48px 24px 24px;
+    background: rgba(0, 0, 0, 0.9);
+    cursor: zoom-out;
+}
+
+.overlay[hidden] {
+    display: none;
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 82vh;
+    object-fit: contain;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.overlay p {
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.overlay-close {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    border: 0;
+    background: transparent;
+    color: white;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .name {
+        margin: 0;
+        transform: none;
+        font-size: 22px;
+    }
+
+    .sidebar-padding {
+        position: static;
+        display: flex;
+        width: auto;
+        justify-content: center;
+        transform: none;
+    }
+
+    .sidebar a {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+
+    main {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 8px;
+    }
+
+    #gallery img {
+        height: 180px;
+    }
+}
+.sidebar a:hover {
+    background: #222;
+}

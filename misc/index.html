@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quinn H Photography</title>
+    <meta name="description" content="Photography portfolio and studio website." />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/universal.css">
+  </head>
+  <body>
+
+    <div class="sidebar" id="sidebar">
+      <div class="name">Quinn H Photography</div>
+        <div class="sidebar-padding">
+            <a href="/index.html" class="sidebar-link">Home</a>
+            <a href="/projects/index.html" class="sidebar-link">Projects</a>
+            <a href="/realestate.html" class="sidebar-link">Real Estate</a>
+            <a href="/misc/index.html" class="sidebar-link">Miscellaneous</a>
+        </div>
+    </div>
+    
+    <main>
+      <div id="gallery" aria-label="Navy project photo gallery"></div>
+      <div id="loader" role="status" aria-live="polite">Loading photos…</div>
+    </main>
+
+    <div id="overlay" class="overlay" role="dialog" aria-modal="true" aria-label="Photo preview" hidden>
+      <button class="overlay-close" type="button" aria-label="Close photo preview">&times;</button>
+      <img id="preview-image" alt="">
+      <p id="preview-caption"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

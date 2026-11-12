@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 * {
+    user-select: none;
     font-family: "Montserrat", sans-serif;
 }
 body {
@@ -61,4 +62,7 @@ img {
     background:rgb(8, 8, 8);
     opacity: 0.8;
     padding: 10px;
+}
+.sidebar a:hover {
+    background: #222;
 }
